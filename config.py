@@ -23,7 +23,7 @@ API_HASH = environ.get("API_HASH", "a0f739ce8661686db27b3acbc41bdfc1")
 BOT_TOKEN = environ.get("BOT_TOKEN", "7614509268:AAG_hIDpY-dPbQNTc9_ZyfnkdwRiRuZaaQI")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1772895724').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "@telmoves_rsbot") # without @
 PORT = environ.get("PORT", "8080")
 
@@ -80,7 +80,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
+URL = environ.get("URL", "https://vj-file-store-0601.onrender.com")
 
 
 # Don't Remove Credit Tg - @VJ_Botz
